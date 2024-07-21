@@ -1,0 +1,24 @@
+'''''
+my_list=list(map(int,input().split()))
+while(n>0):
+    rem=num%10
+    digit=num
+    sum=0
+    sum+=rem
+    print(sum)
+'''''
+
+
+
+
+
+
+#sum of digits
+#n=123
+n=int(input())
+sum=0
+while n>0:
+    r=n%10
+    sum=sum+r
+    n=n//10
+print(sum)
