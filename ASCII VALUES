@@ -1,0 +1,60 @@
+'''''
+print(ord('A'))
+#for i in range(0,128):
+ #   print(chr(i),end=" ") 
+for i in range(32,128):    #(0-9 range is 48-57),32-34 special chara,45-48
+    print(chr(i),end=" ")
+'''''
+
+#how to print sum of digits using ascii values
+'''''
+inp=(input())
+sum=0
+for i in inp:
+   if(ord(i)>=48 and ord(i)<=57):
+      sum+=int(i)
+print(sum)
+'''''
+
+#write a code to print all the capital letters in a given string
+'''''
+inp=(input())
+for i in inp:
+   if(ord(i)>=65 and ord(i)<90):
+      print(i)
+'''''
+    
+#remove all the brackets from the algebraic expressions    
+'''''
+inp=str(input())
+for i in inp:
+ if(ord(i)==40 or ord(i)==41 or ord(i)==91 or ord(i)==93):
+    pass
+ else:
+    print(i,end=" ")
+    print()
+'''''
+#how to print the below code
+#ABC=4
+#EFG
+#inp=str(input())
+'''
+n=input()
+for i in n:
+   #if(ord(i)>=60 and ord(i)>=90): #ascii values for capital letters
+    n=ord(i)+4
+    print(chr(n),end="")
+'''
+#ip:hello-----wor----ld
+#op:------helloworld
+inp=input()
+count=0
+ans=""
+for i in inp:
+   if(i=="-"):
+      count+=1
+   else:
+      ans=ans+i
+print("-"*count+ans)
+
+
